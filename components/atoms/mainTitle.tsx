@@ -1,4 +1,4 @@
-
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 type ButtonType = {
     text: string
@@ -6,12 +6,9 @@ type ButtonType = {
 
 function MainTitle({ text }: ButtonType) {
     return (
-        <>
-            <h1 className="maintitle">
-                {text}
-            </h1>
-        </>
-
+        <h1 color='red'>
+            {text}
+        </h1>
     )
 }
 

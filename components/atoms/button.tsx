@@ -1,13 +1,19 @@
+import { Button, layout } from '@chakra-ui/react'
+
 type ButtonType = {
-    lable: string
+    label: string
+    width: string
 }
 
-function Button({ lable }: ButtonType) {
+function Buttona({ label, width }: ButtonType) {
     return (
-        <button className="button">
-            {lable}
-        </button>
+        <Button borderRadius={0} colorScheme="red" variant="outline" width={width} _hover={{
+            backgroundColor: "red.600",
+            color: "black",
+        }}>
+            {label}
+        </Button>
     )
 }
 
-export default Button
+export default Buttona
