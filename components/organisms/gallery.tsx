@@ -12,7 +12,7 @@ function Gallery({ pt }: GalleryType) {
                 <Image src='/images/logo.png' w={200} />
             </Box>
             <Spacer />
-            <Nav pr='10' />
+            <Nav active="gallery" pr='10' />
         </Flex>
     )
 
