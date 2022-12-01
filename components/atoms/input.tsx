@@ -1,5 +1,32 @@
-function Output() {
+import { Input } from '@chakra-ui/react'
+
+type InputType = {
+    width: string
+    color: string
+    placeholder: string
 
 }
 
-export default Output
+
+function Inputs({ width, color, placeholder }: InputType) {
+    return (
+        <Input
+            minW="100px"
+            width={width}
+            variant='outline'
+            placeholder={placeholder}
+            borderRadius={0}
+            borderWidth="3px"
+            color={color}
+            focusBorderColor={color}
+            _placeholder={{
+                color: "white",
+            }}
+
+        />
+    )
+
+
+}
+
+export default Inputs

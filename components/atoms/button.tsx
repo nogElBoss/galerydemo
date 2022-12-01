@@ -5,15 +5,22 @@ type ButtonType = {
     width: string
 }
 
-function Buttona({ label, width }: ButtonType) {
+function Buttons({ label, width }: ButtonType) {
     return (
-        <Button borderRadius={0} colorScheme="red" variant="outline" width={width} _hover={{
-            backgroundColor: "red.600",
-            color: "black",
-        }}>
+        <Button
+            minW="60px"
+            borderRadius={0}
+            color="black"
+            backgroundColor="white"
+            width={width}
+            _hover={{
+                backgroundColor: "black",
+                color: "white",
+                borderWidth: "3px"
+            }}>
             {label}
-        </Button>
+        </Button >
     )
 }
 
-export default Buttona
+export default Buttons

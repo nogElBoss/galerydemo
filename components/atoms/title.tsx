@@ -1,15 +1,15 @@
 import { Button, ButtonGroup, Heading } from '@chakra-ui/react'
 
-type MainTitleType = {
+type TitleType = {
     text: string
 }
 
-function MainTitle({ text }: MainTitleType) {
+function Title({ text }: TitleType) {
     return (
         <Heading
             fontFamily="Bodoni MT"
             color='#e41541'
-            fontSize="12rem"
+            fontSize="4rem"
             fontWeight="light"
         >
             {text}
@@ -17,4 +17,4 @@ function MainTitle({ text }: MainTitleType) {
     )
 }
 
-export default MainTitle
+export default Title
