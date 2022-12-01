@@ -9,7 +9,7 @@ function MainTitle({ text }: MainTitleType) {
         <Heading
             fontFamily="Bodoni MT"
             color='#e41541'
-            fontSize="12rem"
+            fontSize="9rem"
             fontWeight="light"
         >
             {text}
