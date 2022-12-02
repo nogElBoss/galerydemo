@@ -3,7 +3,7 @@ import GalleryImage from "../atoms/galleryImage"
 function Galleries() {
     return (
         <div style={{
-            marginTop: "30px",
+            paddingTop: "30px",
             columns: "3 200px",
             columnGap: "1.5rem",
             width: "90%",
