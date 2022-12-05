@@ -8,13 +8,16 @@ type ButtonType = {
 function Buttons({ label, width }: ButtonType) {
     return (
         <Button
+            fontFamily="Bodoni MT"
+            fontWeight="light"
+            fontSize="20px"
             minW="60px"
             borderRadius={0}
             color="black"
             backgroundColor="white"
             width={width}
             _hover={{
-                backgroundColor: "black",
+                backgroundColor: "#111111",
                 color: "white",
                 borderWidth: "3px"
             }}>

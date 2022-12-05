@@ -1,6 +1,7 @@
 import { Box, Flex } from "@chakra-ui/react";
 import Title from "../components/atoms/title";
 import Headers from "../components/organisms/header";
+import Forms from "../components/organisms/form";
 
 function Contact() {
     return (
@@ -12,8 +13,14 @@ function Contact() {
                 <Title text="CONTACT" />
                 <Box width="96vw" height="2px" backgroundColor='#e41541'>
                 </Box>
+                <Flex height="100vh" w="100vw" alignItems="center" justifyContent="center">
+                    <Flex direction="column" w="50vw">
+                        <Forms margin="4" />
+                    </Flex>
+                </Flex>
+
             </Flex>
-        </Box>
+        </Box >
     )
 }
 
