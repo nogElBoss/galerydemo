@@ -10,7 +10,7 @@ type HeaderType = {
 function Nav({ pr, active }: HeaderType) {
     if (active == "home") {
         return (
-            <HStack spacing={{ base: '5px', md: '20px', lg: '25px' }} pr={pr}>
+            <HStack spacing={{ base: '5px', md: '15px', lg: '15px' }} pr={pr}>
                 <Links color='#e41541' text="HOME" href='/' />
                 <Texts color="white" text="|" />
                 <Links color="white" text="GALLERY" href='/gallery' />
