@@ -15,7 +15,7 @@ function Inputs({ width, color, placeholder, type, margin }: InputType) {
         <Input
             fontFamily="Bodoni MT"
             fontWeight="light"
-            fontSize="20px"
+            fontSize={{ base: '15px', md: '20px', lg: '25px' }}
             mb={margin}
             type={type}
             minW="100px"

@@ -10,7 +10,7 @@ function Buttons({ label, width }: ButtonType) {
         <Button
             fontFamily="Bodoni MT"
             fontWeight="light"
-            fontSize="20px"
+            fontSize={{ base: '15px', md: '20px', lg: '25px' }}
             minW="60px"
             borderRadius={0}
             color="black"

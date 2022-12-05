@@ -11,7 +11,7 @@ function Texts({ color, text }: TextType) {
         <Text
             fontFamily="Bodoni MT"
             color={color}
-            fontSize="20px"
+            fontSize={{ base: '10px', md: '24px', lg: '30px' }}
             fontWeight="light"
 
         >

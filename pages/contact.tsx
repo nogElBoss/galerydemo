@@ -14,7 +14,7 @@ function Contact() {
                 <Box width="96vw" height="2px" backgroundColor='#e41541'>
                 </Box>
                 <Flex height="100vh" w="100vw" alignItems="center" justifyContent="center">
-                    <Flex direction="column" w="50vw">
+                    <Flex direction="column" w={{ base: '70vw', md: '50vw', lg: '50vw' }}>
                         <Forms margin="4" />
                     </Flex>
                 </Flex>

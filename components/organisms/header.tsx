@@ -9,11 +9,11 @@ type HeaderType = {
 function Headers({ pt, active }: HeaderType) {
     return (
         <Flex pt={pt}>
-            <Box pl="10">
+            <Box pl={{ base: '5', md: '12', lg: '15' }}>
                 <Image src='/images/logo.png' w={200} />
             </Box>
-            <Spacer />
-            <Nav active={active} pr='10' />
+            <Spacer minW={{ base: '50px', md: '0px', lg: '0px' }} />
+            <Nav active={active} pr={{ base: '5', md: '12', lg: '15' }} />
         </Flex>
     )
 
