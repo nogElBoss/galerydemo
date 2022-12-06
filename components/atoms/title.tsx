@@ -9,7 +9,7 @@ function Title({ text }: TitleType) {
         <Heading
             fontFamily="Bodoni MT"
             color='#e41541'
-            fontSize="3rem"
+            fontSize={{ base: '20px', md: '45px', lg: '45px' }}
             fontWeight="light"
         >
             {text}
