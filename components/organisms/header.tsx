@@ -1,4 +1,4 @@
-import { Flex, Box, Spacer, Image } from '@chakra-ui/react'
+import { Flex, Box, Spacer, Image, useMediaQuery } from '@chakra-ui/react'
 import Nav from '../molecules/nav'
 import Menus from './menu'
 
@@ -7,15 +7,9 @@ type HeaderType = {
     pt: string
 }
 
-let windouWidth = 1500
-if (typeof window !== 'undefined') {
-    windouWidth = window.innerWidth
-    console.log(windouWidth)
-}
-
 function Headers({ pt, active }: HeaderType) {
-    let menu = null
-    if (windouWidth < 600) {
+    const [isLargerThan1280] = useMediaQuery('(min-width: 1280px)')
+    if (isLargerThan1280) {
         menu = <Menus pr={{ base: '10px', md: '20px', lg: '20px' }} />
     }
     else {
